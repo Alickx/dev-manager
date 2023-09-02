@@ -1,11 +1,17 @@
+<template>
+  <div>
+
+  </div>
+</template>
+
 <script setup lang="ts">
+
+
+
+
+
+
 
 </script>
 
-<template>
-  $END$
-</template>
-
-<style scoped>
-
-</style>
+<style scoped></style>

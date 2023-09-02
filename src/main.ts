@@ -1,10 +1,13 @@
-import { createApp } from 'vue'
-import "./style.css"
-import App from './App.vue'
-import './samples/node-api'
+import { createApp } from "vue";
+import App from "./App.vue";
+import "@unocss/reset/sanitize/sanitize.css";
+import "@unocss/reset/sanitize/assets.css";
+import "uno.css";
+import router from "./router";
 
-createApp(App)
-  .mount('#app')
+const app = createApp(App);
+app.use(router);
+app.mount("#app")
   .$nextTick(() => {
-    postMessage({ payload: 'removeLoading' }, '*')
-  })
+    postMessage({ payload: "removeLoading" }, "*");
+  });
